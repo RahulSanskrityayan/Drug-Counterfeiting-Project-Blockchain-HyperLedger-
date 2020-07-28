@@ -1,0 +1,54 @@
+1) Point to the Network folder of the Project
+
+2) Check wheather an existing docker is running or not using command : docker ps -a
+
+3) If any Existing Docker is running then Kill/remove the docker container using command :docker rm containername 
+
+4) Remove any Dangling Images : docker system prune
+
+5) Start the Network using command: ./fabricNetwork.sh up
+
+6) SSH into the chaincode container using : docker exec -it chaincode /bin/bash
+
+7) Inside the Chaincode container run npm commands: npm install
+
+8) Install and Instantiate the Cahaincode using command :./fabricNetwork.sh install
+
+9) Inside the chaincode container run the smart contract: npm run start-dev
+
+10) Check wether the state transfer is showing "ready" if not run the 2 npm commands again inside chaincode container : npm install then : npm run start-dev
+
+11) Now Point to the application folder using command : cd ../application
+
+12) Start the application on port 3000 using the command : node . ( we will receive message Distributed Pharma App listening on port 3000!)
+
+13) Start the Postman and import the collection files (if required set the postman as mentioned in the intructions provided in the upgrad module.)
+
+14) There are 4 collection files : AWalletCreation.postman_collection.json, Initiation.postman_collection.json, Supply Chain.postman_collection.json and History.postman_collection.json
+
+15) First Run the AWalletCreation.postman_collection.json for creating wallet for each organization.
+    Note: you need to replace the correct path of the certificates generated for each admin users of the org from the crypto-Confing  	  	  folder. 
+  
+Sample for Manufacturer which will be genearted new everytime :
+
+certificatePath :/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/  Admin@manufacturer.pharma-network.com/msp/signcerts/Admin@manufacturer.pharma-network.com-cert.pem
+
+privateKeyPath  :/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp/keystore/204233568a1078a1f1418a6bbdd9a6d6393603974963f3bba328e045ebc3b6e4_sk
+
+
+16) click on the collection files in the collection running window : Click to select the save response checkbox and set delay to 1000ms.
+
+17) Run the collection file : AWalletCreation.postman_collection.json ckeck response in Response Body
+
+18) Run the rest collection files in Order as : Initiation.postman_collection.json then Supply Chain.postman_collection.json and     	 finally History.postman_collection.json
+
+Note: If at any point you get error stating the function doesn't exist which you are trying to invoke. Kindly run npm run start-dev command in chaincode container and restart application using command "node ." .
+
+19) For testing the functionality of the chaincode through cli container SSh in cli container using command :
+    docker exec -it cli /bin/bash
+
+20) Execute sample commands for each operation in attached document sampleCommands.
+
+
+
+

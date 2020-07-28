@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "27046465-82cd-4056-93e7-89591c13d436",
+		"name": "AWalletCreation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/4_addToWalletConsumer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/consumer.pharma-network.com/users/Admin@consumer.pharma-network.com/msp/signcerts/Admin@consumer.pharma-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/consumer.pharma-network.com/users/Admin@consumer.pharma-network.com/msp/keystore/cc9ca41999f8cd264add546d296140cc840e925a5653189cb745e525df9b6efb_sk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/4_addToWalletConsumer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"4_addToWalletConsumer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/addToWalletManufacturer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp/signcerts/Admin@manufacturer.pharma-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp/keystore/4fd62a0743e1e008440df544a1cc7239010c0c906afe4444774b32785538fa52_sk",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/1_addToWalletManufacturer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"1_addToWalletManufacturer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/2_addToWalletRetailer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/retailer.pharma-network.com/users/Admin@retailer.pharma-network.com/msp/signcerts/Admin@retailer.pharma-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/retailer.pharma-network.com/users/Admin@retailer.pharma-network.com/msp/keystore/fc9f9d3409954f14d5eff3b55354d278d70d6b104a79d3541193ed7604d51b59_sk",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/2_addToWalletRetailer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"2_addToWalletRetailer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/3_addToWalletDistributor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/distributor.pharma-network.com/users/Admin@distributor.pharma-network.com/msp/signcerts/Admin@distributor.pharma-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/distributor.pharma-network.com/users/Admin@distributor.pharma-network.com/msp/keystore/fa53698e1d40aa56fd4e7c0bbaccb96d0ab3614be886641840724ebd3df863c2_sk",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/3_addToWalletDistributor",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"3_addToWalletDistributor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/5_addToWalletTransporter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/transporter.pharma-network.com/users/Admin@transporter.pharma-network.com/msp/signcerts/Admin@transporter.pharma-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/Desktop/Project/network/crypto-config/peerOrganizations/transporter.pharma-network.com/users/Admin@transporter.pharma-network.com/msp/keystore/80663128c7525ac3095f8f36230a40b72e69e2b2608beb772fe4d105dadfc8de_sk",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/5_addToWalletTransporter",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"5_addToWalletTransporter"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
